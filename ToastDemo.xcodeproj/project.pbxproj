@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8479101C2F49A90300ECED45 /* ToastKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8479101B2F49A90300ECED45 /* ToastKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		847910022F49A65000ECED45 /* ToastDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToastDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8479101C2F49A90300ECED45 /* ToastKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = ToastDemo;
 			packageProductDependencies = (
+				8479101B2F49A90300ECED45 /* ToastKit */,
 			);
 			productName = ToastDemo;
 			productReference = 847910022F49A65000ECED45 /* ToastDemo.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 84790FF92F49A65000ECED45;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8479101A2F49A90300ECED45 /* XCRemoteSwiftPackageReference "ToastKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 847910032F49A65000ECED45 /* Products */;
 			projectDirPath = "";
@@ -351,6 +360,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8479101A2F49A90300ECED45 /* XCRemoteSwiftPackageReference "ToastKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rakraushan/ToastKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8479101B2F49A90300ECED45 /* ToastKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8479101A2F49A90300ECED45 /* XCRemoteSwiftPackageReference "ToastKit" */;
+			productName = ToastKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 84790FFA2F49A65000ECED45 /* Project object */;
 }
