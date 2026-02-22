@@ -10,14 +10,30 @@
 		8479101C2F49A90300ECED45 /* ToastKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8479101B2F49A90300ECED45 /* ToastKit */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		847910252F4AB3CB00ECED45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84790FFA2F49A65000ECED45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 847910012F49A65000ECED45;
+			remoteInfo = ToastDemo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		847910022F49A65000ECED45 /* ToastDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToastDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		847910212F4AB3CB00ECED45 /* ToastDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToastDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		847910042F49A65000ECED45 /* ToastDemo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ToastDemo;
+			sourceTree = "<group>";
+		};
+		847910222F4AB3CB00ECED45 /* ToastDemoTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ToastDemoTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -31,6 +47,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8479101E2F4AB3CB00ECED45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -38,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				847910042F49A65000ECED45 /* ToastDemo */,
+				847910222F4AB3CB00ECED45 /* ToastDemoTests */,
 				847910032F49A65000ECED45 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				847910022F49A65000ECED45 /* ToastDemo.app */,
+				847910212F4AB3CB00ECED45 /* ToastDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +101,29 @@
 			productReference = 847910022F49A65000ECED45 /* ToastDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		847910202F4AB3CB00ECED45 /* ToastDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 847910272F4AB3CB00ECED45 /* Build configuration list for PBXNativeTarget "ToastDemoTests" */;
+			buildPhases = (
+				8479101D2F4AB3CB00ECED45 /* Sources */,
+				8479101E2F4AB3CB00ECED45 /* Frameworks */,
+				8479101F2F4AB3CB00ECED45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				847910262F4AB3CB00ECED45 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				847910222F4AB3CB00ECED45 /* ToastDemoTests */,
+			);
+			name = ToastDemoTests;
+			packageProductDependencies = (
+			);
+			productName = ToastDemoTests;
+			productReference = 847910212F4AB3CB00ECED45 /* ToastDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -88,6 +136,10 @@
 				TargetAttributes = {
 					847910012F49A65000ECED45 = {
 						CreatedOnToolsVersion = 26.2;
+					};
+					847910202F4AB3CB00ECED45 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 847910012F49A65000ECED45;
 					};
 				};
 			};
@@ -109,12 +161,20 @@
 			projectRoot = "";
 			targets = (
 				847910012F49A65000ECED45 /* ToastDemo */,
+				847910202F4AB3CB00ECED45 /* ToastDemoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		847910002F49A65000ECED45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8479101F2F4AB3CB00ECED45 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -131,7 +191,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8479101D2F4AB3CB00ECED45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		847910262F4AB3CB00ECED45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 847910012F49A65000ECED45 /* ToastDemo */;
+			targetProxy = 847910252F4AB3CB00ECED45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		8479100B2F49A65200ECED45 /* Debug */ = {
@@ -338,6 +413,53 @@
 			};
 			name = Release;
 		};
+		847910282F4AB3CB00ECED45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U4QG9MQCSR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.training.ToastDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToastDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ToastDemo";
+			};
+			name = Debug;
+		};
+		847910292F4AB3CB00ECED45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U4QG9MQCSR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.training.ToastDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToastDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ToastDemo";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -355,6 +477,15 @@
 			buildConfigurations = (
 				8479100E2F49A65200ECED45 /* Debug */,
 				8479100F2F49A65200ECED45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		847910272F4AB3CB00ECED45 /* Build configuration list for PBXNativeTarget "ToastDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847910282F4AB3CB00ECED45 /* Debug */,
+				847910292F4AB3CB00ECED45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
